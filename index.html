@@ -1,85 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El faro</title>
+	<title>Mejoras de estética y organización</title>
+	<!-- Importamos Bootstrap desde una CDN para usar sus estilos -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <img src="https://static.emol.cl/emol50/Fotos/2021/11/25/file_20211125004250.jpg" width="200" height="200">
-    <h1>El Faro</h1>
-    <a href="index.html">Inicio</a> | <a href="Deportes.html">Deportes</a> | <a href="Negocios.html">Negocios</a>
-  </header>
-    <main>
-      <h2>Noticias</h2>
-      <table>
-        <tr>
-        <td>
-           <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404151638.jpg" width="400" height="224">
-        </td>
-        <td>
-          <h3>Zelenski expone ante el Congreso y agradece postura de Chile frente a la guerra: FA y PC se restaron
+	<!-- Barra de navegación superior -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">El Faro</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Cultura</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Panoramas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Espectaculos</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-            </h3>
-          <p>El Presidente de Ucrania, Volodimir Zelenski, a través de una video conferencia, expuso hoy martes ante una sesión especial del Congreso Pleno los estragos de la guerra. En dicha instancia se reunieron ambas Cámaras para escuchar al mandatario. El presidente del Senado, Juan Antonio Coloma, dio inicio a la sesión, y junto al presidente de la Cámara de Diputados, Vlado Mirosevic, solidarizaron con la situación que está atravesando Ucrania y ambos, a nombre de las Corporaciones, extendieron su apoyo desde el punto de vista humanitario.
+	<!-- Banner publicitario -->
+	<div class="jumbotron">
+		<h1 class="display-4">El Faro</h1>
+		<p class="lead">Noticias</p>
+		<hr class="my-4">
+		<p>Las Noticias Nacionales e internacional en un solo lugar .</p>
+	</div>
 
-            </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404151840.jpg" width="400" height="224">
-        </td>
-        <td>
-            <h3>Donald Trump se declaró no culpable de pagos irregulares a actriz porno: regresó a Florida</h3>
-            <p>El ex Presidente de Estados Unidos Donald Trump se declaró este martes no culpable de los 34 cargos en relación con los pagos irregulares a la actriz porno Stormy Daniels durante la campaña presidencial de 2016, para que no hiciera pública una relación sexual entre ambos. Trump, que se ha convertido en el primer presidente estadounidense en afrontar cargos penales, se presentó ante el juez del tribunal neoyorquino de Manhattan Juan Manuel Merchán poco después de haberse entregado a la Fiscalía, donde le leyeron sus derechos y fue fichado.
+	<!-- Sección de artículos destacados -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h2>Zelenski expone ante el Congreso y agradece postura de Chile frente a la guerra: FA y PC se restaron</h2>
+				<p>El Presidente de Ucrania, Volodimir Zelenski, a través de una video conferencia, expuso hoy martes ante una sesión especial del Congreso Pleno los estragos de la guerra. En dicha instancia se reunieron ambas Cámaras para escuchar al mandatario. El presidente del Senado, Juan Antonio Coloma, dio inicio a la sesión, y junto al presidente de la Cámara de Diputados, Vlado Mirosevic, solidarizaron con la situación que está atravesando Ucrania y ambos, a nombre de las Corporaciones, extendieron su apoyo desde el punto de vista humanitario.</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Otros artículos</h2>
+				<ul class="list-group">
+					<li class="list-group-item">Artículo 1</li>
+					<li class="list-group-item">Artículo 2</li>
+					<li class="list-group-item">Artículo 3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-            </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404114709.jpg" width="400" height="224">
-        </td>
-        <td>
-            <h3>Cronología del terremoto que sacude al Colegio San Ignacio luego de que alumnas denunciaran "encerrona" de compañeros
-
-                </h3>
-            <p>Una gran conmoción hay en la comunidad escolar del Colegio San Ignacio El Bosque, de Providencia, tras un hecho ocurrido el viernes pasado en los pasillos del establecimiento, y que derivó en la intervención de Carabineros y en la apertura de una investigación en la Fiscalía Metropolitana Oriente.
-                El colegio, en una comunicación a los apoderados, habla de una "vulneración sufrida por un grupo de alumnas". "Hoy, durante el segundo recreo, se generó un lamentable episodio en el pasillo del segundo piso, donde algunas estudiantes manifestaron haberse sentido vulneradas por acciones de sus compañeros", señala la directora, Luz María Acle.
-
-            </p>
-        </td>
-      </tr>
-      <td> 
-        <iframe width="400" height="224" src="https://www.youtube.com/embed/NWnQ01y_dJQ" title="Youtube video player" frame></iframe>
-      </td>
-      <td> 
-        <h3>Balacera en Concepción
-
-        </h3>
-
-        <p> (Video) Sujeto disparó en contra de otro y lo hirió de gravedad.</p>
-      </td>
-      <html>
-<body>
-
-<audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<h3> Ministro de Hacienda</h3>
-<p> (Audio) Conferencia ministro de hacienda</p>
-
-</body>
-</html>
-      </table>
-    </main>
-    <footer>
-        Derechos Reservados El Faro 2023 
-    </footer>
-</body>
-</html>
+	<!-- Footer -->
+	<footer class="bg-light text-center text-lg-start">
+		<div class="container p-4">
+			<div class="row">
+				<div
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                  <title>Mi sitio web mejorado</title>
+                  
+                  <!-- Agrega la referencia a los archivos de Bootstrap -->
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                  
+                  <!-- Agrega tus estilos personalizados -->
+                  <link rel="stylesheet" href="estilos.css">
+                  
+                </head>
+                <body>
+                
+                  <!-- Barra de navegación -->
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Mi sitio web</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Deportes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                
+                  <!-- Banner principal -->
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">Las noticias que importan</h1>
+                      <p class="lead">Aquí encontrarás los últimos artículos y noticias de interés.</p>
+                    </div>
+                  </div>
+                
+                  <!-- Secciones principales -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <h2>Artículos destacados</h2>
+                        <div class="card-deck">
+                          <div class="card">
+                            <img class="card-img-top" src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404151840.jpg" width="400" height="224"> 
+                            <div class="card-body">
+                              <h5 class="card-title">Donald Trump se declaró no culpable de pagos irregulares a actriz porno: regresó a Florida</h5>
+                              <p class="card-text">El ex Presidente de Estados Unidos Donald Trump se declaró este martes no culpable de los 34 cargos en relación con los pagos irregulares a la actriz porno Stormy Daniels durante la campaña presidencial de 2016, para que no hiciera pública una relación sexual entre ambos. Trump, que se ha convertido en el primer presidente estadounidense en afrontar cargos penales, se presentó ante el juez del tribunal neoyorquino de Manhattan Juan Manuel Merchán poco después de haberse entregado a la Fiscalía, donde le leyeron sus derechos y fue fichado. </p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="
+                              <section class="section">
+                                <div class="container">
+                                  <div class="columns">
+                                    <div class="column">
+                                      <h2 class="title is-2">Cronología del terremoto que sacude al Colegio San Ignacio luego de que alumnas denunciaran "encerrona" de compañeros
+                                    </h2>
+                                      <hr>
+                                      <div class="columns is-multiline">
+                                        <div class="column is-6">
+                                          <div class="card">
+                                            <div class="card-image">
+                                              <figure class="image is-4by3">
+                                                <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404114709.jpg" width="400" height="224">
+                                              </figure>
+                                            </div>
+                                            <div class="card-content">
+                                              <p class="title is-5">Colegio San Ignacio</p>
+                                              <p class="subtitle is-6">Autor Juan Fuentes</p>
+                                              <div class="content">
+                                                <p>Una gran conmoción hay en la comunidad escolar del Colegio San Ignacio El Bosque, de Providencia, tras un hecho ocurrido el viernes pasado en los pasillos del establecimiento, y que derivó en la intervención de Carabineros y en la apertura de una investigación en la Fiscalía Metropolitana Oriente.
+                                                    El colegio, en una comunicación a los apoderados, habla de una "vulneración sufrida por un grupo de alumnas". "Hoy, durante el segundo recreo, se generó un lamentable episodio en el pasillo del segundo piso, donde algunas estudiantes manifestaron haberse sentido vulneradas por acciones de sus compañeros", señala la directora, Luz María Acle.</p>
+                                                <time datetime="2023-05-02">Hace 2 días</time>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="column is-6">
+                                          <div class="card">
+                                            <div class="card-image">
+                                              <figure class="image is-4by3">
+                                                <img src="https://www.youtube.com/embed/NWnQ01y_dJQ" title="Youtube video player" frame></iframe>
+                                              </figure>
+                                            </div>
+                                            <div class="card-content">
+                                              <p class="title is-5">Título del artículo</p>
+                                              <p class="subtitle is-6">Autor del artículo</p>
+                                              <div class="content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit dolor eget convallis mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                                <time datetime="2023-04-30">Hace 4 días</time>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="column">
+                                      <h2 class="title is-2">Otros Artículos</h2>
+                                      <hr>
+                                      <div class="columns is-multiline">
+                                        <div class="column is-6">
+                                          <div class="card">
+                                            <div class="card-image">
+                                              <figure class="image is-4by3">
+                                                <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                                              </figure>
+                                            </div>
+                                            <div class="card-content">
+                                              <p class="title is-5">Título del artículo</p>
+                                              <p class="subtitle is-6">Autor del artículo</p>
+                                              <div class="content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit dolor eget convallis mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                                <time datetime="2023-04-28">Hace 6 días</time>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="column is-6">
+                                          <div class="card
+                                          <!DOCTYPE html>
+                                          <html lang="en">
+                                            <head>
+                                              <meta charset="UTF-8" />
+                                              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                                              <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                                              <link
+                                                rel="stylesheet"
+                                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                                                integrity="sha512-CqoZ+31vk9gkKOQ1hRy/sleFJxAKoM5w5gPnY/CvZYUNz9hmCUdLdw+JDTJbFMze13BMz58SkFJGhqo+f5m5g=="
+                                                crossorigin="anonymous"
+                                                referrerpolicy="no-referrer"
+                                              />
+                                              <link
+                                                rel="stylesheet"
+                                                href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+                                                integrity="sha512-qJ4uxsQ4v45qwG9C+ntD/e8oTJU+V6UJx6TbT+YRZeqnLJgwkZh+XJHCB7GqyMgJy3n+CDxQwV1R8Wg01Z7RKg=="
+                                                crossorigin="anonymous"
+                                                referrerpolicy="no-referrer"
+                                              />
+                                              <link rel="stylesheet" href="style.css" />
+                                              <title>My Website</title>
+                                            </head>
+                                            <body>
+                                              <nav class="navbar" role="navigation" aria-label="main navigation">
+                                                <div class="navbar-brand">
+                                                  <a class="navbar-item" href="#">
+                                                    <img
+                                                      src="https://bulma.io/images/bulma-logo.png"
+                                                      width="112"
+                                                      height="28"
+                                                      alt=""
+                                                    />
+                                                  </a>
+                                          
+                                                  <a
+                                                    role="button"
+                                                    class="navbar-burger burger"
+                                                    aria-label="menu"
+                                                    aria-expanded="false"
+                                                    data-target="navbarBasicExample"
+                                                  >
+                                                    <span aria-hidden="true"></span>
+                                                    <span aria-hidden="true"></span>
+                                                    <span aria-hidden="true"></span>
+                                                  </a>
+                                                </div>
+                                          
+                                                <div id="navbarBasicExample" class="navbar-menu">
+                                                  <div class="navbar-start">
+                                                    <a class="navbar-item" href="#">Home</a>
+                                          
+                                                    <a class="navbar-item" href="#">Documentation</a>
+                                          
+                                                    <div class="navbar-item has-dropdown is-hoverable">
+                                                      <a class="navbar-link" href="#">
+                                                        More
+                                                      </a>
+                                          
+                                                      <div class="navbar-dropdown">
+                                                        <a class="navbar-item" href="#">About</a>
+                                                        <a class="navbar-item" href="#">Jobs</a>
+                                                        <a class="navbar-item" href="#">Contact</a>
+                                                        <hr class="navbar-divider" />
+                                                        <a class="navbar-item" href="#">Report an issue</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                          
+                                                  <div class="navbar-end">
+                                                    <div class="navbar-item">
+                                                      <div class="buttons">
+                                                        <a class="button is-primary" href="#">
+                                                          <strong>Sign up</strong>
+                                                        </a>
+                                                        <a class="button is-light" href="#">
+                                                          Log in
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </nav>
+                                          
+                                              <section></section>
+                                        
+                                        <footer>
+                                            Derechos Reservados El Faro 2023
+                                        
+                                        </footer>
