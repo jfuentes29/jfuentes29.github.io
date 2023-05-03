@@ -1,64 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El faro</title>
+  
+  <meta charset="UTF-8">
+    <title>El Faro</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <!-- Contenido del sitio -->
+  </body>
+</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Faro - Noticias</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
   <header>
-    <img src="https://static.emol.cl/emol50/Fotos/2021/11/25/file_20211125004250.jpg" width="200" height="200">
-    <h1>El Faro</h1>
-    <a href="index.html">Inicio</a> | <a href="Deportes.html">Deportes</a> | <a href="Negocios.html">Negocios</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://static.emol.cl/emol50/Fotos/2018/02/17/file_20180217094140.jpg
+      " width="100" height="100" class="d-inline-block align-top" alt="">
+          
+        </a>
+        <!-- Resto del código del menú aquí -->
+      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">El Faro</a>
+    </nav>
+    <div id="hora"></div>
+<script>
+    function mostrarHora() {
+        var fecha = new Date();
+        var diaSemana = fecha.toLocaleDateString('es-CL', { weekday: 'long' });
+        var dia = fecha.getDate();
+        var mes = fecha.toLocaleDateString('es-CL', { month: 'long' });
+        var anio = fecha.getFullYear();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var segundos = fecha.getSeconds();
+        document.getElementById("hora").innerHTML = "Santiago, " + diaSemana + " " + dia + " de " + mes + " " + anio + " " + hora + ":" + (minutos < 10 ? '0' : '') + minutos + ":" + (segundos < 10 ? '0' : '') + segundos;
+    }
+    setInterval(mostrarHora, 1000);
+</script>
   </header>
-    <main>
-      <h2>Negocios</h2>
-      <table>
-        <tr>
-        <td>
-           <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404160446.jpg" width="400" height="224">
-        </td>
-        <td>
-          <h3>Ministro de Agricultura respalda un alza al impuesto específico: "Está en el programa y me parece del todo sensato"
-            </h3>
-          <p>El ministro de Agricultura, Estaban Valenzuela, entró al debate abierto su par de Medio Ambiente, Maisa Rojas, respecto a los denominados impuestos correctivos que impulsará el Gobierno, entre los cuales se incluiría un alza al impuesto específico a los combustibles.
-
-
-            </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404134523.jpg" width="400" height="224">
-        </td>
-        <td>
-            <h3>Ministerio de Medio Ambiente sale al paso de críticas por impuesto específico y dice que anuncios competen a Hacienda
-                </h3>
-            <p>La ministra de Medio Ambiente, Maisa Rojas, salió al paso de las críticas -tanto de oposición como del oficialismo- que han surgido luego de que deslizara que el proyecto de impuestos correctivos en el que trabaja el Gobierno está "prácticamente listo", donde se incluiría un alza al impuesto específico a los combustibles.
-
-            </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404094707.jpg" width="400" height="224">
-        </td>
-        <td>
-            <h3>Malasia plantea a China crear un Fondo Monetario Asiático para hacer frente a dominio del dólar
-
-
-                </h3>
-            <p>Con el obejtivo de contrarrestar la dominancia mundial del dólar estadounidense y del Fondo Monetario Internacional (FMI), el primer ministro de Malasia, Anwar Ibrahim, aseguró este martes que China está abierta a su iniciativa de formar un "Fondo Monetario Asiático". Así lo afirmó hoy Anwar en el Parlamento de Kuala Lumpur, donde subrayó que "en las negociaciones entre Malasia y otros países, se deberían utilizar las respectivas divisas nacionales", según unas declaraciones recogidas hoy por la agencia estatal Bernama.
-
-
-            </p>
-        </td>
-      </tr>
-      </table>
+  
+  </header>
+  <main>
+    <script>
+      function mostrarHora() {
+          var fecha = new Date();
+          var diaSemana = fecha.toLocaleDateString('es-CL', { weekday: 'long' });
+          var dia = fecha.getDate();
+          var mes = fecha.toLocaleDateString('es-CL', { month: 'long' });
+          var anio = fecha.getFullYear();
+          var hora = fecha.getHours();
+          var minutos = fecha.getMinutes();
+          var segundos = fecha.getSeconds();
+          document.getElementById("hora").innerHTML = "Santiago, " + diaSemana + " " + dia + " de " + mes + " " + anio + " " + hora + ":" + (minutos < 10 ? '0' : '') + minutos + ":" + (segundos < 10 ? '0' : '') + segundos;
+      }
+      setInterval(mostrarHora, 1000);
+  </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Deportes.html">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Negocios.html">Negocios</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="col-md-4">
+        <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404151638.jpg" with=700 height=300 alt="Destacados">
+        <h1>Zelenski expone ante el Congreso y agradece postura de Chile frente a la guerra: FA y PC se restaron
+        <h1>
+      </div>
+      <p>El Presidente de Ucrania, Volodimir Zelenski, a través de una video conferencia, expuso hoy martes ante una sesión especial del Congreso Pleno los estragos de la guerra. En dicha instancia se reunieron ambas Cámaras para escuchar al mandatario. El presidente del Senado, Juan Antonio Coloma, dio inicio a la sesión, y junto al presidente de la Cámara de Diputados, Vlado Mirosevic, solidarizaron con la situación que está atravesando Ucrania y ambos, a nombre de las Corporaciones, extendieron su apoyo desde el punto de vista humanitario.</p>
+      <div class="col-md-4">
+        <img src="https://static.emol.cl/emol50/Fotos/2023/04/04/file_20230404160446.jpg" with=700 height=300 alt="Lo mas visto">
+        <h1>Ministro de Agricultura respalda un alza al impuesto específico: "Está en el programa y me parece del todo sensato" <h1>
+      </div>
+      <p>El ministro de Agricultura, Estaban Valenzuela, entró al debate abierto su par de Medio Ambiente, Maisa Rojas, respecto a los denominados impuestos correctivos que impulsará el Gobierno, entre los cuales se incluiría un alza al impuesto específico a los combustibles.</p>
+      
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        Derechos Reservados El Faro 2023  
+        <p>Derechos reservados © 2023 El Faro</p>
     </footer>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
